@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>voucher page</title>
+	<link rel="stylesheet" href="../style/voucher.css">
+	<link rel="stylesheet" href="style/animate.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="voucher-box">
+		<div id="voucher-menu">
+			<div id="first-div"></div>
+			<div id="second-div">
+				<div id="button-one">
+					<button id="tabs" name="purchase">Purchase</button>
+				</div>
+				<div id="button-two">
+					<button id="tabs" name="sales">Sales</button>
+				</div>
+			</div>
+			<div id="third-div"></div>
+		</div>
+		
+		<div id="voucher-section">
+			<div id="purchase" class="open">
+				<div id="voucher-list-box">
+					<table id="voucher-details">
+						<tr id="tr-one">
+							<td id="purchase-no-text-td">Purchase NO:</td>
+							<td id="purchase-no-td">123</td>
+							<td id="purchase-no-date-text">Date</td>
+							<td id="purchase-no-date">18/01/2021</td>
+						</tr>
+						
+						<tr id="tr-two">
+							<td id="party-ac-name-text">party A/C name: </td>
+							<td id="party-name-input"><input type="text" id="input-text-name" placeholder="write party name here"></td>
+							<td id="party-name-current-balance">Current balance</td>
+							<td id="party-balance-amount">2000 cr</td>
+						</tr>
+					</table>
+				
+					
+					<table id="voucher-list-row">
+						<tr id="">
+							<td id="item-td">Item</td>
+							<td id="quantity-td">Quantity</td>
+							<td id="rate-td">Rate</td>
+							<td id="per-td">Per</td>
+							<td id="amount-td">Amount</td>
+							<td id="delete-td">Delete</td>
+						</tr>
+					
+					</table>
+					
+					<button id="add-btn"><i class="fa fa-plus"></i> Add Item</button>
+				</div>
+			</div>
+			
+			<div id="sales" class="open">
+			<h1 style="text-align:center;">Welcome to sales</h1>
+			</div>
+		</div>
+	</div>
+	<script src="../script/accounts_with_inventory/update.js"></script>
+	<script src="../script/accounts_with_inventory/voucher.js"></script>
+</body>
+</html>

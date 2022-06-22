@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+
+#play-box{
+	width:77%;
+	height:500px;
+	border:1px solid grey;
+	margin:70px auto;
+	box-shadow:2px 5px 2px grey;
+	border-radius:2%;
+}
+
+#video-header{
+	width:100%;
+	height:50px;
+	border-radius:2%;
+}
+
+#video-name{
+	padding:0;
+	margin:0;
+	float:left;
+	margin-left:20px;
+	margin-top:5px;
+}
+
+
+#like,#dislike,#share{
+	font-size:25px;
+	float:right;
+	margin-right:18px;
+	color:black;
+	margin-top:10px;
+}
+
+#video{
+	margin-left:0px;
+}
+
+#video-box{
+	width:700px;
+	height:400px;
+	float:left;
+	margin-left:5px;
+	margin-top:0;
+}
+
+
+#content-box{
+	width:315px;
+	height:442px;
+	border:1px solid grey;
+	float:right;
+	margin-left:2px;
+	overflow-x:scroll;
+}
+
+
+#btn-list{
+	width:700px;
+	height:40px;
+	float:left;
+	margin-left:5px;
+} 
+
+#play,#tv,#refresh{
+	float:left;
+	margin-left:18px;
+	font-size: 20px;
+	margin-top:10px;
+} 
+
+#loading{
+	width:500px;
+	height:30px;
+	border:1px solid grey;
+	background:white;
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+}
+
+#television, #volume{
+	float:right;
+	margin-right:15px;
+	font-size:20px;
+	margin-top:10px;
+}
+
+
+#content-header{
+	padding:0;
+	margin:0;
+	margin-top:-13px;
+	font-weight:bold;
+	font-size:35px;
+}
+
+li{
+	list-style:none;
+	font-weight:bold;
+}

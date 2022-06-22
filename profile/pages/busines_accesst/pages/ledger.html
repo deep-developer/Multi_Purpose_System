@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Accounts with inventory</title>
+	<link rel="stylesheet" href="../style/ledger.css">
+	<link rel="stylesheet" href="style/animate.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="ledger-webpage">
+		<div id="header-box">
+			<div id="cmp-logo">
+			</div>
+		</div>
+		
+			<h1 id="cmp-title">Business Management System</h1><br>
+			<h4 id="cmp-designation">Manage your all business details like ledger,voucher,tax,balance sheet and many more</h4><br>
+			<h4 id="business-mode" style="color:blue;font-size:20px;">Business Mode: accounts with inventory</h4>
+			<h4 id="cmp-date">Date : </h4>
+			<h4 id="cmp-time">Time : </h4>
+			
+			<br><br>
+			
+			<div id="ledger-menu-box">
+				<fieldset>
+					<legend>Ledger Option</legend>
+					
+					<div id="option-list">
+					<button>Create</button>
+					<button>Edit</button>
+					<button>Search</button>
+					<div id="logo-retrive"></div>
+					<div id="cmp-retrive-box">
+						<h4 id="cmp-name">Wap Institute</h4>
+					</div>
+					</div>
+					
+					<div id="option-box">
+							<div class="open" id="create">
+								<div style="width:100%;height:350px;">
+								<form id="create-form">
+									<div id="ledger-name-box">
+										<div id="ledger-name-input">
+										<button id="ledger-no" style="width:20px;height:20px;background:black;color:white;border-radius:50%;float:left;">1</button>
+											<h3 id="ledger-header" style="padding:0;margin:0;margin-top:15px;margin-left:10px;">Ledger Name</h3><br>
+											<input type="text" name="ledger name" id="ledger-input" required="required">
+										</div>
+										<div id="total-opening-balance">
+											<b style="float:left;margin-right:20px;margin-top:5px;">Total Opening Balance</b><br/>
+											<span id="debit" style="float:right;margin-right:20px;"></span><br/>
+											<span id="credit" style="float:right;margin-right:20px;"></span><br/>
+											<hr width="200" size="1" align="right" style="float:right;margin-right:20px;color:black;"></hr>
+											<b style="float:left;margin-top:5px;margin-left:100px;">Difference : </b> 
+											<span id="dif" style="float:right;margin-top:5px;"> </span>
+										</div>
+									</div>
+									
+									
+									
+									
+									<div id="mailing-details-box">
+										<div id="under-box">
+											<h5 id="under-header">Under</h5>
+												<select id="group-account" required = "required">
+													<option>select group</option>
+													<option>capital Account</option>
+													<option>sales Account</option>
+													<option>purchase Account</option>
+													<option>sundry creditor</option>
+													<option>sundry debitor</option>
+												</select>
+												
+											<h5 id="opening-header">Opening Balance</h5>
+											<input type="number" placeholder="0.00" name="opening balance" id="opening-input" required="required">
+											
+											<h5 id="mode-header">Mode</h5>
+											<input type="text" placeholder="Cr" name="opening balance" id="mode-input" required = "required">
+										</div>
+										<div id="mailing-details">
+											<h4 id="mailing-header">Mailing Details</h4>
+											<h5 id="mailing-name">Name</h5>
+											<input type="text" name="mailing name" id="mailing-name-input">
+											
+											<h5 id="mailing-address">Address</h5>
+											<textarea id="textarea"></textarea>
+										
+										</div>
+									</div>
+									
+									
+									<div id="submit-button">
+										<button id="create-btn">Create Now !</button>
+									</div>
+									</form>
+								</div> 
+							</div>
+							
+							<div class="open" id="edit">
+								<div style="width:100%;height:350px;">
+									<div id="edit-box-one">
+										<div id="search-voucher-box-one">
+											<h5 id="edit-header">Search and Edit</h5>
+											<input type="text" name="search and edit" id="edit-input">
+										</div>
+										<div id="search-voucher-box-two"></div>
+									</div>
+							
+									<div id="edit-box-two">
+										<p id="ledger-notice" style="padding:0;margin:0;font-size:20px;font-weight:bold;margin-left:20px;margin-top:10px;"></p>
+										<p id="edit-lno" style="padding:0;margin:0;font-size:20px;font-weight:bold;margin-left:20px;margin-top:10px;"></p>
+										<p id="edit-lname" style="padding:0;margin:0;font-size:20px;font-weight:bold;margin-left:20px;margin-top:10px;"></p>
+										<p id="edit-group" style="padding:0;margin:0;font-size:20px;font-weight:bold;margin-left:20px;margin-top:10px;"></p>
+											<select id="sel-group" style="border:1px dashed blue;padding:5px;display:none;margin-left:20px;">
+												<option>Select group</option>
+												<option>Capital account</option>
+												<option>Sales account</option>
+												<option>Purchase account</option>
+												<option>Sundry creditor</option>
+												<option>Sundry debitor</option>
+											</select>
+										<p id="edit-balance" style="padding:0;margin:0;font-size:20px;font-weight:bold;margin-left:20px;margin-top:10px;"></p>
+										<p id="edit-mname" style="padding:0;margin:0;font-size:20px;font-weight:bold;margin-left:20px;margin-top:10px;"></p>
+										<p id="edit-address" style="padding:0;margin:0;font-size:20px;font-weight:bold;margin-left:20px;margin-top:10px;"></p>
+											<button id="save-eladger" style="display:none;width:100px;height:20px;float:left;">save</button>
+											<button id="delete-eladger" style="display:none;width:100px;height:20px;float:left;">delete</button>
+									</div>
+								</div>
+							</div>
+							
+							<div class="open" id="search">
+								<div style="width:100%;height:350px;">
+									<div id="search-box-one">
+										<div id="search-ledger-box-one">
+											<h5 id="search-header">Search Ledgers</h5>
+											<input type="text" name="search and edit" id="search-input">
+										</div>
+										<div id="search-ledger-box-two"></div>
+									</div>
+							
+									<div id="search-box-two">
+										<h1 id="search-notice" style="color:red;font-size:50px;text-align:center;padding:0;margin:0;margin-top:100px;"></h1>
+										
+									<div id="search-details-box" style="display:none;">
+										<h2 id="s-lno">Ledger No :     </h2><br>
+										<h2 id="s-lname">Ledger Name :     </h2><br>
+										<h2 id="s-lgroup">Group :     </h2><br>
+										<h2 id="s-lbalance">Opening Balance :    </h2><br>
+										<h2 id="s-mname">Mailing Name :    </h2><br>
+										<h2 id="s-maddress">Mailing Address :    </h2>
+									</div>
+									
+									</div>
+								</div>
+							</div>
+					</div>
+				</fieldset>
+			</div>
+	</div>
+	<script src="../script/accounts_with_inventory/update.js"></script>
+	<script src="../script/accounts_with_inventory/ledger.js"></script>
+</body>
+</html>

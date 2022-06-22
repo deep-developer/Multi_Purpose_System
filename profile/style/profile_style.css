@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body{
+	padding:0;
+	margin:0;
+}
+
+#profile-content{
+	width:100%;
+	height:100vh;
+	background:white;
+	overflow:hidden;
+	position:relative;
+}
+
+#head{
+	width:100%;
+	height:170px;
+	background:#FF7466;
+}
+
+#sec{
+	width:100%;
+	height:425px;
+	background:white;
+}
+#foot{
+	width:100%;
+	height:170px;
+	background:#FF7466;
+}
+
+
+#head-text{
+	padding:0;
+	margin:0;
+	font-size:60px;
+	color:white;
+	font-weight:bold;
+	font-family:verdana;
+	text-shadow:0px 2px 0px black;
+}
+
+#user-img{
+	width:100px;
+	height:100px;
+	border:1px solid #ccc;
+	background:white;
+	position:absolute;
+	left:45%;
+	top:20%;
+	box-shadow:2px 2px 2px grey;
+	border-radius:50%;
+}
+
+#app-menu{
+	width:100%;
+	height:60px;
+	background:black;
+	position:absolute;
+	top:45%;
+}
+
+#fa-one,#fa-two,#fa-three,#fa-four,#fa-five
+{
+	width:100px;
+	height:70px;
+	border:1px solid #ccc;
+	float:left;
+	margin-left:50px;
+	margin-top:15%;
+	cursor:pointer;
+}
+
+#fa-one{
+	margin-left:325px;
+}
+
+#brief,#pencil,#phone,#play,#s-out{
+	margin-left:35px;
+	margin-top:5px;
+	font-size:30px;
+}
+
+span{
+	font-size:17px;
+	margin-left:15px;
+	color:aqua;
+	font-weight:bold;
+}
+
+a{
+	color:black;
+	text-decoration:none;
+}

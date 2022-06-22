@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+*{box-sizing:border-box}
+
+body{
+	padding:0;
+	margin:0;
+}
+
+#profile-page{
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+	background-image:url("../images/profile-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+#msg-box{
+	width:45%;
+	height:400px;
+	background:#E2F0F9;
+	margin-top:5%;
+	margin-left:360px;
+	position:absolute;
+	top: 10%;
+	border-radius: 15px;
+	transition: 1s;
+}
+
+#msg-box:hover{
+	box-shadow: 3px 3px 4px 3px #286FB4,
+				10px 13px 15px 9px #286FB4,
+				15px 18px 22px 14px #286FB4,
+				-3px 3px 4px 3px #286FB4,
+				-10px 13px 15px 9px #286FB4,
+				-15px 18px 22px 14px #286FB4;
+}
+
+#msg-box img{
+	border:1px solid #ccc;
+	padding:3px;
+	margin-top:10px;
+}
+
+#app-name{
+		font-family: 'Fascinate Inline', cursive;
+		padding:0;
+		margin:0;
+		font-size:40px;
+		color:#FF7466;
+}
+
+#up-btn{
+	width:100px;
+	height:100px;
+	border:1px solid grey;
+	margin-top:110px;
+	margin-left:10px;
+	position:relative;
+	border-radius:20px;
+}
+
+#input{
+	width:100%;
+	height:140px;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	cursor:pointer;
+}
+
+#i{
+	color:blue;
+	margin:40% 10%;
+}
+
+#msg-name{
+	position:absolute;
+	left:33%;
+	top:60%;
+	padding:0;
+	margin:0;
+	font-size:50px;
+	font-family:verdana;
+}
+
+#fa-next{
+	float:right;
+	position:absolute;
+	right:5%;
+	bottom:5%;
+	color:red;
+	cursor:pointer;
+	display:none;
+}
+
+/* start profile container coding */
+#profile-cont{
+	width:320px;
+	height:320px;
+	background:black;
+	display:block;
+}
+/* end profile container coding */

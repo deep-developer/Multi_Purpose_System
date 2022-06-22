@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+body{
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+
+
+#header{
+	width:150px;
+	height:150px;
+	position:fixed;
+	background:url(con_images/triangle.png);
+	z-index:-1;
+	
+}
+#contact-main-page{
+	width:100%;
+	height:100vh;
+	border:1px solid red;
+}
+
+#image{
+	width:120px;
+	height:120px;
+	border:1px solid #ccc;
+	background:#ccc;
+	box-shadow:2px 2px 2px grey;
+	border-radius:50%;
+	position:absolute;
+	top:15%;
+	left:12%;
+	z-index:1;
+}
+
+#head-title{
+	padding:0;
+	margin:0;
+	color:#1B61EF;
+	font-size:40px;
+	font-family:verdana;
+}
+
+#user-form{
+	width:350px;
+	height:280px;
+	border-left:3px solid #FF7466;
+	border-bottom:3px solid #FF7466;
+	position:relative;
+
+}
+
+#plus{
+	font-size:50px;
+	padding:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-radius:50%;
+	background:#FF7466;
+	color:white;
+	font-weight:bold;
+	position:absolute;
+	top:-10px;
+	left:-30px;
+}
+
+#ftext,#pnumber,#snumber{
+	width:280px;
+	height:40px;
+	margin-bottom:20px;
+	margin-left:30px;
+	border-left:5px solid #1B61EF;
+	border-right:1px solid #ddd;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding-left:15px;
+	outline:none;
+}
+
+#ftext{
+	margin-top:40px;
+}
+
+#add{
+	width:65px;
+	height:30px;
+	margin-left:260px;
+	background:yellow;
+	color:black;
+	font-weight:bold;
+	border:inherit;
+	cursor:pointer;
+}
+
+fieldset{
+	width:230px;
+	height:100px;
+	border-top:1px solid white;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+}
+
+#delete-icon{
+	float:right;
+	margin-right:10px;
+	margin-top:5px;
+	font-size:15x;
+	color:yellow;
+}
+
+
+#contact-list{
+	width:300px;
+	height:800px;
+	background:black;
+	position:absolute;
+	top:0;
+	right:0;
+	overflow-y:scroll;
+	padding-left:20px;
+	padding-top:13px;
+	padding-right:10px;
+}
+
+
+#head-contact{
+	padding:0;
+	margin:0;
+	color:red;
+}
+
+#search-box{
+	width:260px;
+	height:20px;
+	border:1px solid #ccc;
+	margin-top:10px;
+	padding:8px;
+}
+
+
+legend{
+	color:black;
+	font-weight:bold;
+	background:yellow;
+}
+
+li{
+	color:white;
+	margin-left:20px;
+	font-weight:bold;
+}
+
+#log-restore{
+	float:right;
+	width:313px;
+	height:25px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	margin-right:17px;
+	background:white;
+}
+
+#restore-box{
+	width:75%;
+	height:0px;
+	background:white;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#restore-list,th{
+	border:1px solid black;
+	margin-top:40px;
+}

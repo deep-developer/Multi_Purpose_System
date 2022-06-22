@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="business.css">
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>
+business
+</title>
+</head>
+<body>
+<div id="contact-main-page">
+	<header id="header">
+	<div id="image"></div>
+	</header>
+	
+		<center><h1 id="business-text-one">Business Management System</h1></center>
+		<br>
+		<center><h6 id="business-text-two">Manage your all business details like ledger, voucher, tax, balance sheet and many more</h6></center>
+		
+		
+		<div id="company-box">
+			<div id="create-company">
+				<div id="create-icon-one"><i class="fa fa-home" id="create"></i></div>
+				<div id="company"><h1 id="create-company-text">Create Company</h1></div>
+				
+					<div id="model">
+						<div id="form">
+							<form id="form-val">
+								<input type="text" id="input-one" name="company name" placeholder="Company Name" required>
+								<br>
+								<input type="text" id="input-two" name= "mailing name" placeholder="Mailing Name" required>
+								<br>
+								<textarea id="input-three" placeholder="Address" required></textarea>
+								<br>
+								<input type="number" id="input-four" placeholder="Phone Number" required>
+								<br>
+								<input type="tel" id="input-five" placeholder="Fax Number">
+								<br>
+								<input type="email" id="input-six" placeholder="E-mail">
+								<br>
+								<input type="website" id="input-seven" placeholder="Website">
+								<br>
+								<h5 type="date">Financial Year</h5>
+								<br>
+								<input type="date" id="input-eight" placeholder="Financial Year">
+								<br>
+								<h5>Stock Type</h5>
+								<br>
+									<select id="stock-type">
+										<option>Accounts only</option>
+										<option>Accounts with Inventry</option>
+									</select>
+								<input type="submit" value="Get Started" id="submit">
+							</form>
+						</div>
+					</div>
+			</div>
+			
+			
+			
+			
+			<div id="delete-company">
+				<div id="create-icon-two"><i class="fa fa-trash" id="delete"></i></div>
+				<div id="company"><h1 id="delete-company-text">Delete Company</h1></div>
+				<p style="color:red;font-size:20px;font-family:verdana;margin-left:50px;display:none;font-weight:bold;" id="del-notice">Are You Sure? <br> <button id="ok">OK</button> <button id="cancel">cancel</button></p>
+			</div>
+			
+			<div id="sign-out">
+				<div id="create-icon-three"><i class="fa fa-sign-out" id="signout"></i></div>
+				<div id="company"><h1 id="sign-out-text">Logout</h1></div>
+				<h1 id="log-notice" style= "color:red;font-size:40px;font-weight:bold;text-align:center;margin-top:30px;display:none;">Please Wait.....</h1>
+			</div>
+		</div>
+		
+	</div>
+
+	<script src="con_script.js"></script>
+	<script src="business.js"></script>
+</body>
+</html>

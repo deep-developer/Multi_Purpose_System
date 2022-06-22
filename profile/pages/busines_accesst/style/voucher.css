@@ -1,0 +1,232 @@
+@charset="utf-8";
+
+body{
+	padding:0;
+	margin:0;
+}
+
+#voucher-box{
+	width:80%;
+	height:auto;
+	margin:20px auto;
+	position:fixed;
+	top:2%;
+	left:10%;
+}
+
+#voucher-menu{
+	width:100%;
+	height:100px;
+}
+
+#voucher-section{
+	width:100%;
+	height:500px;
+	border-left:1px solid gray;
+	border-right:1px solid gray;
+	border-bottom:1px solid gray;
+}
+
+#first-div{
+	width:19%;
+	height:98px;
+	border-bottom:10px solid blue;
+	float:left;
+}
+
+#second-div{
+	width:60%;
+	height:98px;
+	border-top:10px solid blue;
+	border-left:10px solid blue;
+	border-right:10px solid blue;
+	float:left;
+}
+
+#third-div{
+	width:19%;
+	height:98px;
+	border-bottom:10px solid blue;
+	float:left;
+}
+
+
+#button-one{
+	width:35%;
+	height:70px;
+	border:10px solid #ddd;
+	float:left;
+	margin-left:50px;
+	margin-top:5px;
+	border-top-left-radius:50%;
+	border-top-right-radius:10%;
+	border-bottom-right-radius:50%;
+	border-bottom-left-radius:10%;
+	background:red;
+}
+
+#button-two{
+	width:35%;
+	height:70px;
+	border:10px solid #ddd;
+	float:right;
+	margin-right:50px;
+	margin-top:5px;
+	border-top-left-radius:10%;
+	border-top-right-radius:50%;
+	border-bottom-right-radius:10%;
+	border-bottom-left-radius:50%;
+	background:red;
+}
+
+#button-one button{
+	width:150px;
+	height:30px;
+	border:2px solid black;
+	background:inherit;
+	font-size:15px;
+	font-family:cursive;
+	font-weight:bold;
+	text-align:center;
+	margin:20px 30px;
+	background:#ccc;
+	border-radius:40%;
+	cursor:pointer;
+}
+
+
+#button-two button{
+	width:150px;
+	height:30px;
+	border:2px solid black;
+	background:inherit;
+	font-size:15px;
+	font-family:cursive;
+	font-weight:bold;
+	text-align:center;
+	margin:20px 30px;
+	background:#ccc;
+	border-radius:40%;
+	cursor:pointer;
+}
+
+
+#button-one:hover{
+	background:black;
+	border:10px solid red;
+}
+
+#button-two:hover{
+	background:black;
+	border:10px solid red;
+}
+
+#voucher-section >*{
+	display:none;
+}
+
+#tabs.active{
+	background:black;
+	border:10px solid red;
+	color:white;
+}
+
+#voucher-list-box{
+	width:90%;
+	height:450px; 
+	position:absolute;
+	top:23%;
+	left:5%;
+}
+
+#voucher-details{
+	width:100%;
+	height:100px;
+}
+
+#tr-one,#tr-two{
+	width:100%;
+	height:30px;
+}
+
+#purchase-no-text-td{
+	width:15%;
+	background:black;
+	color:white;
+	font-size:15px;
+	text-align:center;
+}
+
+#purchase-no-td{
+	width:60%;
+	background:none;
+	border:1px solid gray;
+}
+
+#purchase-no-date-text{
+	width:15%;
+	background:black;
+	color:white;
+	font-size:15px;
+	text-align:center;
+}
+
+#purchase-no-date{
+	width:15%;
+	background:black;
+	color:white;
+	font-size:15px;
+	text-align:center;
+}
+
+#party-ac-name-text,#party-name-current-balance,#party-balance-amount{
+	width:15%;
+	background:black;
+	color:white;
+	font-size:15px;
+	text-align:center;
+}
+
+#party-name-input{
+	width:60%;
+	background:none;
+	border:1px solid gray;
+}
+
+
+#voucher-list-row{
+	width:100%;
+	height:30px;
+	margin-top:30px;
+}
+
+
+#item-td, #quantity-td, #rate-td, #per-td, #amount-td, #delete-td{
+	width:15%;
+	height:30px;
+	background:black;
+	color:white;
+	text-align:center;
+}
+
+#add-btn{
+	width:120px;
+	height:30px;
+	background-image: linear-gradient(#ddd, black);
+	color:white;
+	border-radius:10%;
+	margin-left:5px;
+	margin-top:30px;
+	cursor:pointer;
+}
+
+#input-text-name{
+	width:50%;
+	height:25px;
+	margin-left:10px;
+	box-sizing:border-box;
+	padding-left:10px;
+}
+
+
+
